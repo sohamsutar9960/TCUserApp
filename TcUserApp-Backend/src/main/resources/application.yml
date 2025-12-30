@@ -1,0 +1,54 @@
+api:
+  endpoint: https://your-api-endpoint.com/rest/scdservice/v1/scd_user/
+  password: ${API_PASSWORD:your-api-password}
+  username: ${API_USERNAME:your-api-username}
+
+jwt:
+  token:
+    refresh: 172800000
+    validity: 7200000
+
+react:
+  endpoint: http://localhost:3002
+
+spring:
+  cloud:
+    azure:
+      active-directory:
+        credential:
+          client-id: ${AZURE_CLIENT_ID:your-client-id}
+          client-secret: ${AZURE_CLIENT_SECRET:your-client-secret}
+          scope: openid,profile,email
+        enabled: true
+        profile:
+          tenant-id: ${AZURE_TENANT_ID:your-tenant-id}
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: ${DB_PASSWORD:your-db-password}
+    url: ${DB_URL:jdbc:mysql://localhost:3306/TCUserAppDB}
+    username: ${DB_USERNAME:root}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+    show-sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${MAIL_USERNAME:your-email@gmail.com}
+    password: ${MAIL_PASSWORD:your-email-password}
+    properties:
+      mail:
+        debug: true
+        smtp:
+          ssl:
+            trust: smtp.gmail.com
+          auth: true
+          starttls:
+            enable: true
+            required: true

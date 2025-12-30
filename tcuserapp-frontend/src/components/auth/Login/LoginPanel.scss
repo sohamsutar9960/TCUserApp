@@ -1,0 +1,102 @@
+.loginpanel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  background-image: url(../../../../public/images/loginbg.png);
+  border: 2px solid #ded5d5;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.loginpanel-content {
+  background-color: white;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 0px 30px 36px 30px;
+  width: 19rem;
+  max-width: 400px;
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  text-align: start;
+  height: fit-content;
+
+  .logo-container {
+    margin-bottom: 20px;
+  }
+
+  .input-field {
+    margin-bottom: 10px;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+
+    button {
+      font-size: 14px;
+      padding: 8px 16px;
+      transition:
+        background-color 0.3s,
+        color 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0f4a66; /* Darker shade of the original color */
+        color: white; /* Ensure text remains white on hover */
+      }
+    }
+
+    .sign-in-button {
+      background-color: #145b81;
+      padding: 9px 11px;
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0f4a66;
+      }
+    }
+    .loginpanel-content .button-container button,
+    .loginpanel-content .create-user-button {
+      cursor: pointer;
+    }
+
+    .cancel-button {
+      color: #145b81;
+      padding: 9px 11px;
+      border: 1px solid #325f78;
+      font-weight: 700;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #e0e0e0; /* Light gray background on hover */
+        color: #0f4a66; /* Darker text on hover */
+      }
+    }
+
+    .create-user-button {
+      color: #3656f4;
+      text-decoration: underline;
+      cursor: pointer;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #3366cc;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.logo {
+  width: 100%;
+  max-width: 274px;
+  text-align: center;
+  margin-left: 13px;
+}

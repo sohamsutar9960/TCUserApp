@@ -1,0 +1,40 @@
+.custom-dialog {
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.dialog-title {
+  color: white;
+  font-weight: bold;
+}
+
+.dialog-content {
+  padding: 20px;
+}
+
+.dialog-button {
+  border-radius: 4px;
+  margin: 8px;
+  background-color: #2196f3;
+}
+.checkbox-custom {
+  color: black !important; /* Checkbox border color */
+}
+
+.checkbox-custom.Mui-checked {
+  color: black !important; /* Checkbox checked color */
+}
+
+.checkbox-custom .MuiSvgIcon-root {
+  background-color: white !important; /* Checkbox background color */
+  border-radius: 2px; /* Optional: Add some border radius if needed */
+}
+
+.textfield-not-allowed .MuiInputBase-input {
+  cursor: not-allowed;
+  background-color: #f0f0f0;
+}
+
+.input_field {
+  background-color: #f0f0f0;
+}

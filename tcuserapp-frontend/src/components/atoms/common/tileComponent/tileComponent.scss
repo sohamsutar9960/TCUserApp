@@ -1,0 +1,38 @@
+.tile:hover {
+  background: linear-gradient(
+    to right,
+    rgba(80, 190, 190, 0.7) 0,
+    rgb(0, 110, 149) 50%,
+    rgb(0, 114, 154) 83%,
+    rgb(0, 110, 148) 100%
+  ) !important;
+  font-weight: 500 !important;
+  font-size: 1.25rem !important;
+  letter-spacing: 0.34px !important;
+  cursor: pointer;
+}
+.tile {
+  background-color: white;
+  border: 1px solid #98dff8;
+  &:hover {
+    .tileIcon {
+      color: white !important;
+      font-size: 2rem !important;
+    }
+
+    .title {
+      color: white !important;
+    }
+  }
+  border-radius: 12px !important;
+}
+
+.tileIcon {
+  color: #127fa5 !important;
+  margin-bottom: 0.6rem !important;
+}
+
+.title {
+  color: #127fa5 !important;
+  font-weight: bold !important;
+}

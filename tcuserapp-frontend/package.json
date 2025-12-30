@@ -1,0 +1,72 @@
+{
+  "name": "user-management-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^5.15.10",
+    "@mui/material": "^5.16.4",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "@mui/utils": "^5.15.0",
+    "@mui/x-data-grid": "^6.19.3",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.76",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "axios": "^1.6.7",
+    "file-saver": "^2.0.5",
+    "js-cookie": "^3.0.5",
+    "jwt-decode": "^4.0.0",
+    "mui-datatables": "^4.3.0",
+    "postcss-loader": "^8.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-router": "^6.22.0",
+    "react-router-dom": "^6.22.0",
+    "react-scripts": "5.0.1",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.70.0",
+    "styled-components": "^6.1.12",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4",
+    "xlsx": "^0.18.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "start:development": "REACT_APP_ENV=development react-scripts start",
+    "eject": "react-scripts eject",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0 && prettier --check src",
+    "lint:prettier": "prettier --check src",
+    "fix": "eslint src --fix --ext ts,tsx && prettier --write src"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
+    "@types/mui-datatables": "^4.3.12",
+    "prettier": "^3.2.4"
+  }
+}

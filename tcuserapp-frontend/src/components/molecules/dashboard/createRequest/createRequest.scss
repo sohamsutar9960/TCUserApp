@@ -1,0 +1,58 @@
+.stepper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stepper-header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.step {
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.step.active {
+  font-weight: bold;
+  border-color: #007bff;
+}
+
+.stepper-navigation {
+  display: flex;
+  justify-content: space-between;
+  background-color: aliceblue;
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+button {
+  margin: 0 5px;
+}
+
+#reason-dropdown,
+#user-dropdown {
+  width: 100%;
+}
+
+.stepper-navigation button {
+  margin-left: 70px;
+  margin-right: 10px;
+}
+.parent-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between the boxes */
+}
+
+.step-4-container {
+  flex-grow: 1;
+  max-width: calc(50% - 10px); /* Adjust the max-width of each box */
+}

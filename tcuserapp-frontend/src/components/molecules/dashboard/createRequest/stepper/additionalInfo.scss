@@ -1,0 +1,49 @@
+.additionalInfoContainer {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+
+  .headerRow {
+    background-color: #006487;
+  }
+
+  .headerCell {
+    color: white;
+    font-weight: bold;
+  }
+
+  .contentContainer {
+    display: flex;
+  }
+
+  .leftContainer,
+  .rightContainer {
+    width: 50%;
+    padding: 16px;
+  }
+
+  .fieldContainer {
+    margin-bottom: 16px;
+
+    .fieldLabel {
+      font-weight: bold;
+      font-size: 0.875rem;
+    }
+
+    .inputContainer {
+      display: flex;
+      align-items: center;
+
+      .searchButton {
+        margin-left: 8px;
+      }
+    }
+
+    .checkboxContainer {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

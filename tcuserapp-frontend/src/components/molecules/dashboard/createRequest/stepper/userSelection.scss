@@ -1,0 +1,27 @@
+.custom-dialog {
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+.dialog-title {
+  color: white;
+  font-weight: bold;
+}
+
+.dialog-content {
+  padding: 20px;
+}
+
+.dialog-button {
+  border-radius: 4px;
+  margin: 8px;
+  background-color: #2196f3;
+}
+.bold-black-header {
+  font-size: small;
+  color: black !important;
+}
+.textfield-not-allowed .MuiInputBase-input {
+  cursor: not-allowed;
+  background-color: #f0f0f0;
+}

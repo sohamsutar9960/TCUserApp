@@ -1,0 +1,30 @@
+.delet_icon {
+  color: red !important;
+}
+.B_checkbox {
+  border: 1px solid #005f87 !important;
+  border-radius: 4px !important;
+}
+.crossStyle {
+  text-decoration: line-through;
+}
+.nestedRoles {
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", "Selawik", "Open Sans", Arial, sans-serif !important;
+}
+.nestedRoles .roleItem {
+  display: flex;
+  align-items: center;
+  font-size: 12.8px;
+  margin-bottom: 0.5rem;
+}
+.css-10hburv-MuiTypography-root {
+  font-family: "Segoe UI", "Selawik", "Open Sans", Arial, sans-serif !important;
+  // font-weight: bold !important;
+  // color: #1e1e1e !important;
+}
+.MuiFormControlLabel-root .MuiFormControlLabel-label.Mui-disabled {
+  color: black !important;
+  cursor: not-allowed !important;
+}
