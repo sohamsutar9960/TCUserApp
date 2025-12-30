@@ -1,5 +1,5 @@
 api:
-  endpoint: https://your-api-endpoint.com/rest/scdservice/v1/scd_user/
+  endpoint: ${API_ENDPOINT:https://your-api-endpoint.com/rest/scdservice/v1/scd_user/}
   password: ${API_PASSWORD:your-api-password}
   username: ${API_USERNAME:your-api-username}
 
@@ -9,7 +9,7 @@ jwt:
     validity: 7200000
 
 react:
-  endpoint: http://localhost:3002
+  endpoint: http://localhost:3001
 
 spring:
   cloud:
@@ -25,7 +25,7 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    password: ${DB_PASSWORD:your-db-password}
+    password: ${DB_PASSWORD:Creative@7420}
     url: ${DB_URL:jdbc:mysql://localhost:3306/TCUserAppDB}
     username: ${DB_USERNAME:root}
 
