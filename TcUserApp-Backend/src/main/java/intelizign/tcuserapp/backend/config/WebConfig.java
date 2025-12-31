@@ -14,10 +14,10 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // Apply to all endpoints
-                .allowedOrigins(reactEndpoint) // Allow specific origins
+                .allowedOrigins("*") // Allow specific origins
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH") // Allow specific methods
                 .allowedHeaders("*") // Allow any header
-                .allowCredentials(true) // Allow credentials (e.g., cookies)
+                .allowCredentials(false) // Allow credentials (e.g., cookies)
                 .maxAge(3600); // Cache the response for 1 hour
     }
 }

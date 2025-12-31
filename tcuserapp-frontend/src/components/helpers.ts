@@ -56,7 +56,7 @@ export const useNavigateBack = () => {
               0,
               tabRoutes.includes(pathSegments[pathSegments.length - 1])
                 ? -2
-                : -1,
+                : -1
             )
             .join("/");
         navigate(parentPath);

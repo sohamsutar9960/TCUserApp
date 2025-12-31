@@ -14,7 +14,7 @@ const LoginPage = (props: LoginPanelProps) => {
   };
 
   const logInWithIntelizignAccount = async (
-    e: React.MouseEvent<HTMLButtonElement>,
+    e: React.MouseEvent<HTMLButtonElement>
   ) => {
     e.preventDefault();
     window.location.href = "http://localhost:8080/oauth2/authorization/azure";

@@ -29,7 +29,8 @@ public class CustomJwtRequestFilter extends OncePerRequestFilter {
     public void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
 
         String path = request.getRequestURI();
-        if (path.contains("/register/") || path.contains("doLogin") || path.contains("/izn/email")) {
+        if (path.contains("/register/") || path.contains("doLogin") || path.contains("/izn/email") ||
+            path.contains("/swagger-ui") || path.contains("/v3/api-docs")) {
             filterChain.doFilter(request, response);
             return;
         }

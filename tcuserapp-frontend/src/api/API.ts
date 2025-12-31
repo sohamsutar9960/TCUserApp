@@ -24,7 +24,7 @@ axiosInstance.interceptors.request.use(
   (error) => {
     console.error("Request error:", error);
     return Promise.reject(error);
-  },
+  }
 );
 
 // Response interceptor to handle errors and debugging
@@ -33,10 +33,10 @@ axiosInstance.interceptors.response.use(
   (error) => {
     console.error(
       "Response error:",
-      error.response ? error.response.data : error.message,
+      error.response ? error.response.data : error.message
     );
     return Promise.reject(error);
-  },
+  }
 );
 
 export default axiosInstance;

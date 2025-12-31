@@ -107,7 +107,7 @@ public class WebSecurityConfig {
                 .authorizeHttpRequests((authorize) -> authorize.requestMatchers(exceptAdmin).hasAnyAuthority(exceptAdminAuthorities))
                 .authorizeHttpRequests((authorize) -> authorize.requestMatchers(onlyManager).hasAuthority("MANAGER"))
                 .authorizeHttpRequests((authorize) -> authorize.requestMatchers(onlyRoleApprover).hasAuthority("ROLEAPPROVER"))
-                .authorizeHttpRequests((authorize) -> authorize.requestMatchers("/izn/register/**", "/doLogin", "/izn/email/**").permitAll())
+                .authorizeHttpRequests((authorize) -> authorize.requestMatchers("/izn/register/**", "/doLogin", "/izn/email/**", "/swagger-ui/**", "/v3/api-docs/**", "/swagger-ui.html").permitAll())
                 .authenticationProvider(authenticationProvider())
                 .logout(logout -> logout.logoutUrl("/logout").addLogoutHandler(customLogoutHandler)
                         .logoutSuccessHandler(((request, response, authentication) -> SecurityContextHolder.clearContext())))

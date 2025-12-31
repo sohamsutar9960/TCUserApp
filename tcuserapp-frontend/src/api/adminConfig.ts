@@ -120,7 +120,7 @@ const adminApiConfig = {
       CHANGE_USER_INEVENTORY_USER: (
         systemId: number,
         UserId: string,
-        status: number,
+        status: number
       ) => `/itk/tcUser/${UserId}/${systemId}/${status}`,
     },
   },
